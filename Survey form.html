@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <style type="text/css">
+      body{
+  background-image:  url('https://ma-hub.imgix.net/wp-images/2019/06/02182724/after-effects-zoom-blur-transition.jpg');
+}
+form{
+  background-color: rgb(0, 0, 128);
+  border-radius: 10px;
+  margin: 50px 250px 5px 250px;
+  opacity: 0.7;
+}
+#title{
+  color: white;
+  text-align: center;
+  font-family: Cooper Black, sans-serif;
+  font-size: 50px;
+}
+#subtitle{
+  text-align: center;
+  color: white;
+  font-family: forte, sans-serif;
+  font-size: 30px;
+}
+.label{
+  padding: 5px 0px 5px 10px;
+  color: white;
+  font-family: Comic Sans Ms, sans-serif
+}
+.input{
+  margin-left : 10px;
+  margin-top: -50px;
+  width: 95%;
+  height: 40px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  color: teal;
+  font-family: Comic Sans Ms
+}
+.button{
+  margin: 30px 10px 4px 10px;
+  width: 96%;
+  height: 30px;
+  background-color: orange;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+       <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <h4 id="subtitle">Thank you for taking the time to help us improve the platform</h4>
+    <form>
+ 
+    <h3 class="label">Name:-</h3>
+    <input type="text" placeholder="Enter your name" class="input"></br>
+    <h3 class="label">Email:-</h3>
+  <input type="email" placeholder="Enter your email" class="input"></br>
+<h3 class="label">Age:-</h3>
+<input type="number" min=10 max=99 class="input" placeholder="Age">
+<h3 class="label">Which option describe your current role</h3>
+<select class="input" >
+  <option>Select Current Role</option>
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Full Time Learner</option>
+  <option>Prefer Not To Say</option>
+  <option>Other</option>
+</select>
+<h3 class="label">Would you reccomened FreeCodeCamp to a friend</h3>
+<label class="label"><input type="radio" value="Definately" class="ra" name="a" checked>Definately</label></br>
+<label class="label"><input type="radio" value="Maybe" class="ra" name="a">Maybe</label></br>
+<label class="label"><input type="radio" class="ra" value="not sure" name="a">Not Sure</label>
+<h3 class="label">What is your favorite faeture of FreeCodeCamp :-</h3>
+<select class="input">
+  <option>Select An Option</option>
+  <option>Challenges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>Open Source</option>
+</select>
+<h3 class="label">What would you like to see improved:-</h3>
+<label class="label"><input type="checkbox" value="front-end projects" name="b">Front-end Projects</label></br>
+<label class="label"><input type="checkbox" value="back-end projects" name="b">Back-end Projects</label></br>
+<label class="label"><input type="checkbox" value="data visualisation" name="b">Data Visualisation</label></br>
+<label class="label"><input type="checkbox" value="challenges" name="b">Challenges</label></br>
+<label class="label"><input type="checkbox" value="open source community" name="b">Open Source Community</label></br>
+<label class="label"><input type="checkbox" value="gitter help rooms" name="b">Gitter Help Rooms</label></br>
+<label class="label"><input type="checkbox" value="videos" name="b">Videos</label></br>
+<label class="label"><input type="checkbox" value="city meetups" name="b">City Meetups</label></br>
+<label class="label"><input type="checkbox" value="wiki" name="b">Wiki</labe></br>
+<label class="label"><input type="checkbox" value="forum" name="b">Forum</label></br>
+<label class="label"><input type="checkbox" value="additional courses" name="b">Additional Courses</label></br>
+<h3 class="label">Any Comments or Suggestion</h3>
+<input type="text" class="input" placeholder="Enter your comments here.....">
+<button class="button">Submit</button>
+</form>
+</body>
+</html>
